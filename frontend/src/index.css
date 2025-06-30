@@ -1,0 +1,116 @@
+:root {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #bc1818;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #646cff;
+  --primary-hover-color: #535bf2;
+  --secondary-color: #f9f9f9;
+  --background-dark: #1a1a1a;
+  --background-light: #ffffff;
+  --text-dark: #213547;
+  --text-light: rgba(255, 255, 255, 0.87);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: url('https://cypes.grupoeurohispana.com/img/recursos/3111/tecnico-superior-en-prevencion-de-riesgos-profesionales-fondo-700x200-1-20240229042858.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--secondary-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+a:hover {
+  color: var(--primary-hover-color);
+}
+
+button {
+  border-radius: 12px; 
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(135deg, #646cff, #535bf2); 
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover {
+  transform: translateY(-4px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-dark);
+    background-color: var(--background-light);
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background: linear-gradient(135deg, #747bff, #646cff);
+    color: var(--text-dark);
+  }
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--background-dark);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(180, 20, 20, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+button.secondary {
+  background: var(--secondary-color);
+  color: var(--text-dark);
+  border: 1px solid var(--primary-color);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+button.secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
