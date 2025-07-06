@@ -7,3 +7,4 @@ export interface Evento {
   descripcion: string;
   evidencia?: string | null;
 }
+

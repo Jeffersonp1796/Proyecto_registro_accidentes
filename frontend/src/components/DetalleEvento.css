@@ -85,3 +85,31 @@
     font-size: 1.5rem;
   }
 }
+
+.detalle-evento-info label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.detalle-evento-info input,
+.detalle-evento-info textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.detalle-evento-info input:focus,
+.detalle-evento-info textarea:focus {
+  border-color: #535bf2;
+}
+
+.detalle-evento-info textarea {
+  min-height: 100px;
+  resize: vertical;
+}

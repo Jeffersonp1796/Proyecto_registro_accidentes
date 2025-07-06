@@ -5,7 +5,7 @@ body {
   padding: 0;
   background: url('.components/riesgos.png') no-repeat center center fixed;
   background-size: cover;
-  color: #bf484891;
+  color: #af111191;
   line-height: 1.6;
 }
 
@@ -78,13 +78,13 @@ body {
 
 .app-header {
   width: 100%;
-  background-color: #0974cb;
-  color: rgb(255, 255, 255);
+  background-color: #0078d7;
+  color: white;
   text-align: center;
-  padding: px 0;
+  padding: 20px 0;
   margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(20, 199, 41, 0.1);
-  border-radius: 12px 12px 12px 12px;
+  border-radius: 0 0 12px 12px;
 }
 
 .app-header h1 {

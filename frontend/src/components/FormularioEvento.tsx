@@ -37,7 +37,10 @@ export default function FormularioEvento() {
     Object.entries(form).forEach(([key, value]) => data.append(key, value));
     if (evidencia) data.append('evidencia', evidencia);
 
-    await API.post('/eventos', data);
+    const res = await API.post('/eventos', data);
+    console.log("res");
+    console.log(res);
+    
     alert('Evento registrado');
   };
 
@@ -98,4 +101,3 @@ export default function FormularioEvento() {
     </form>
   );
 }
-
